@@ -7,15 +7,15 @@
 body {
 
     background-color:rgb(247, 243, 243);
-    max-width: 1300px;
+    max-width: 1200px;
     margin: 0 auto;
-    padding: 30px;
+    padding: 40px;
 }
 /*styling the header */
 h1 {
     color:rgb(31, 112, 155);
     font-size:32px;
-    /*text-shadow: 2px 2px rgb(173, 127, 186);*/
+   
 }
 
 .headerstyle {
@@ -37,7 +37,7 @@ h1 {
 
 input {
     display: block;
-    width:50%;
+    width:40%;
     height: 30px;
     margin:30px auto;
     border:2px solid rgb(31, 112, 155);
@@ -58,11 +58,9 @@ input:hover{
 .gallery {
     display: grid;
     max-width: 1000px;
-    grid-template-rows: repeat(3, 1fr);/*explicit grid*/
-    grid-template-columns: repeat(4, 1fr);  /*explicit grid*/
-    /* grid-auto-rows: minmax(100px,1fr); /*implicit grid*/
+    grid-template-columns: repeat(auto-fill, 200px);
     grid-gap:15px;
-    margin:15px auto;/*pour center tout les images en centre le div wrapper*/
+    margin:15px auto;
 }
 img {
     width:100%;

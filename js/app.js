@@ -23,16 +23,18 @@ for (let i = 0; i < nodeList.length; i++) {//begin for
   var result = dataLower.includes(inputLower);
 
   if (result){
-    console.log("valeur trouve");
-    console.log(data);
-    console.log(img);
+    // console.log("valeur trouve");
+    // console.log(data);
 
-  
   }
 
   else {//object.style.display = "none" pour cacher l'objet
     console.log("valeur non trouvé",img);
+    var altimg=img.getAttribute("alt");
+    console.log(altimg);
+    if (altimg!="icon"){//pour ne pas cacher l'icon car c'est une image aussi
     img.style.display="none";
+    }//endif altimg
 
   }//end else
   
