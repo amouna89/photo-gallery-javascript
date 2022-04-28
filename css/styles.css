@@ -1,0 +1,86 @@
+*{
+    box-sizing: border-box; 
+    margin:0;
+    padding:0;
+}
+
+body {
+
+    background-color:rgb(247, 243, 243);
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 30px;
+}
+/*styling the header */
+h1 {
+    color:rgb(31, 112, 155);
+    font-size:32px;
+    /*text-shadow: 2px 2px rgb(173, 127, 186);*/
+}
+
+.headerstyle {
+    display:flex;
+    flex-direction:column-reverse;
+    align-items: center;
+}
+
+.headerstyle img{
+   width:40px;
+   
+    
+}
+.headerstyle img:hover{
+    transform: rotate(400deg);
+     
+ }
+/*styling the input*/
+
+input {
+    display: block;
+    width:50%;
+    height: 30px;
+    margin:30px auto;
+    border:2px solid rgb(31, 112, 155);
+    border-radius: 5px;
+    border-width: 3px;
+}
+input::placeholder{
+    font-size :16px;
+    padding: 10px;
+
+}
+input:hover{
+    background-color: rgb(222, 219, 215);
+    border:rgb(240, 176, 176) ;
+    
+}
+
+.gallery {
+    display: grid;
+    max-width: 1000px;
+    grid-template-rows: repeat(3, 1fr);/*explicit grid*/
+    grid-template-columns: repeat(4, 1fr);  /*explicit grid*/
+    /* grid-auto-rows: minmax(100px,1fr); /*implicit grid*/
+    grid-gap:15px;
+    margin:15px auto;/*pour center tout les images en centre le div wrapper*/
+}
+img {
+    width:100%;
+    border-radius: 5px;
+
+}
+img:hover{
+ transform: scale(1.1);
+ filter: hue-rotate(120deg);
+    
+}
+
+@media screen and (max-width:786px) {
+
+    .container {
+        grid-template-columns: 1fr;
+        max-width: 60%;
+        margin: 0 auto;
+    }
+    
+}
