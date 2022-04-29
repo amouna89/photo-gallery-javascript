@@ -60,7 +60,7 @@ input:hover{
     max-width: 1000px;
     grid-template-columns: repeat(auto-fill, 200px);
     grid-gap:15px;
-    margin:15px auto;
+    justify-content: center;
 }
 img {
     width:100%;
