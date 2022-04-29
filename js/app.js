@@ -5,8 +5,11 @@ baguetteBox.run('.gallery');
 //search function 
 var input = document.getElementById("search");
 
-document.addEventListener('keyup', logKey);
 
+
+document.addEventListener('keyup', logKey);//CALL the function logkey
+
+//define the function logkey due to hoisting :javascript engine loqds the function declaration first then calls the function 
 function logKey(e) {
   var input = document.getElementById("search").value;
     var inputLower = input.toLowerCase();
@@ -20,12 +23,12 @@ for (let i = 0; i < nodeList.length; i++) {//begin for
   var dataLower = data.toLowerCase();  
   var result = dataLower.includes(inputLower);
 
-  if (result === false){
+  if (!result){
    //object.style.display = "none" pour cacher l'objet
    console.log("valeur non trouvé",img);
    var altimg=img.getAttribute("alt");
    console.log(altimg);
-   if (altimg!="icon"){//pour ne pas cacher l'icon car c'est une image aussi
+   if (altimg != "icon"){//pour ne pas cacher l'icon car c'est une image aussi
    img.style.display="none";
    }//endif altimg
 
