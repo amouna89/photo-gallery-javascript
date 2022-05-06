@@ -58,9 +58,9 @@ input:hover{
 .gallery {
     display: grid;
     max-width: 1000px;
-    grid-template-columns: repeat(auto-fill, 200px);
+    grid-template-columns: repeat(auto-fill, 200px); /*implicit grid*/
     grid-gap:15px;
-    justify-content: center;
+     justify-content: center; 
 }
 img {
     width:100%;
